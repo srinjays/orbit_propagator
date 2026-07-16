@@ -1,0 +1,65 @@
+=================================================================
+  Module 8.1 -- AI Training Dataset Summary
+=================================================================
+
+  Feature mode      : enhanced
+  Number of features: 16
+  Number of targets : 6
+  Total samples     : 1000
+
+  Features:
+    [ 0] X (km)
+    [ 1] Y (km)
+    [ 2] Z (km)
+    [ 3] VX (km/s)
+    [ 4] VY (km/s)
+    [ 5] VZ (km/s)
+    [ 6] Resid Range (km)
+    [ 7] Resid Rate (km/s)
+    [ 8] Resid Az (deg)
+    [ 9] Resid El (deg)
+    [10] P_xx
+    [11] P_yy
+    [12] P_zz
+    [13] P_vxvx
+    [14] P_vyvy
+    [15] P_vzvz
+
+  Targets:
+    [ 0] dx (km)
+    [ 1] dy (km)
+    [ 2] dz (km)
+    [ 3] dvx (km/s)
+    [ 4] dvy (km/s)
+    [ 5] dvz (km/s)
+
+  Split (chronological):
+    train       :    700 samples  ( 70.0%)  t=[0.0, 63.0] min
+    val         :    150 samples  ( 15.0%)  t=[63.1, 76.5] min
+    test        :    150 samples  ( 15.0%)  t=[76.6, 90.0] min
+
+  Timestamp matching:
+    Tolerance        : 1.00 s
+    Matched pairs    : 1000
+    Discarded (gap)  : 0
+    Mean dt          : 0.0000 s
+    Max  dt          : 0.0000 s
+
+  Normalisation statistics (z-score):
+    Saved to: normalisation_stats.csv
+
+  NOTE: Normalisation was computed on the full dataset for
+        consistency.  For strict ML practice, re-compute on
+        the training split only and apply to val/test.
+
+  Output files:
+    train_dataset.csv
+    validation_dataset.csv
+    test_dataset.csv
+    normalisation_stats.csv
+    dataset_summary.txt
+    dataset_feature_distributions.png
+    dataset_target_distributions.png
+    dataset_corrections_timeseries.png
+
+=================================================================
